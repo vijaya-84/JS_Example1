@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-top: 390px;
+            margin-left: 5%;
+           
+
+        }
+        button{
+            background-color: white;
+            height: 40px;
+            width:140px;
+            border-radius:15%
+        }
+        button:hover{
+            transform: scale(1.5,1.5);
+        }
+    </style>
+    
+    <button >click</button>
+
+    
+</body>
+<script >
+    const button=document.querySelector("button");
+    const body=document.querySelector("body");
+    const color=['violet','white','blue','red'];
+    body.style.backgroundColor='pink';
+    document.addEventListener('click',function(){
+        const colorIndex=parseInt(Math.random()*color.length);
+        body.style.backgroundColor=color[colorIndex];
+
+    });
+
+</script>
+
+</html>
